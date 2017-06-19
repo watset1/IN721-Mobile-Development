@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bit.watset1.topartistsapp.MainActivity">
+
+    <Button
+        android:text="Display Top Artists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnTopArtists"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Enter an artist name to find similar artists:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTopArtists"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvSimilarArtistLabel"
+        android:textSize="16sp"
+        android:paddingLeft="6dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSimilarArtistLabel"
+        android:id="@+id/layoutButtons">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edArtist"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="Go"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnGo"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTopArtistImage"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lvArtistList" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lvArtistList"
+        android:id="@+id/ivArtistImage"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:text="Display top artist's image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTopArtistImage"
+        android:layout_below="@+id/layoutButtons"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

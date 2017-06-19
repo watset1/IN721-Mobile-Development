@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="400dp"
+    android:minWidth="350dp"
+    android:minHeight="400dp"
+    android:layout_width="350dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etEditNotes"
+        android:background="@color/edittext_background"
+        android:layout_weight="0.9"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:textAlignment="textStart"
+        android:hint="Enter notes..."
+        android:textColorHint="@color/list_label_background"
+        android:gravity="top"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="Save Notes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/btnSaveNotes"
+        android:background="@color/intro_button_tint"
+        android:layout_margin="8dp"
+        android:layout_weight="0.1" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bit.watset1.iwant.ViewAllActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_search"
+        android:layout_margin="8dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/etSearch"
+            android:background="@color/edittext_background"
+            android:textSize="@dimen/addnew_edittext_textsize"
+            android:layout_weight="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="8dp"
+            android:textColorHint="@color/list_label_background"
+            android:hint="Search..."
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:text="GO"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGo"
+            android:layout_weight="0.3"
+            android:background="@color/intro_button_tint"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-3dp" />
+
+    </LinearLayout>
+    <TextView
+        android:text="ALL ITEMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvViewAll"
+        android:layout_below="@+id/layout_search"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:background="@color/product_item_background"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/label_text"
+        android:textStyle="normal|bold"
+        android:padding="8dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lvViewAll"
+        android:padding="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/edittext_background"
+        android:layout_below="@+id/tvViewAll"
+        android:layout_height="350dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFeedback"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/list_background"
+        android:layout_below="@+id/lvViewAll"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="ADD NEW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnAdd"
+        android:layout_alignParentBottom="false"
+        android:layout_margin="8dp"
+        android:background="@color/intro_button_tint"
+        android:layout_below="@+id/tvFeedback" />
+
+</RelativeLayout>

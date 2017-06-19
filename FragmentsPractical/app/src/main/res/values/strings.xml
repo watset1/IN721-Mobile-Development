@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FragmentsPractical</string>
+    <string name="image_display">Fragment displaying an Image</string>
+    <string name="listView_display">Fragment displaying a ListView</string>
+    <string name="tablet_title">Multiple Fragments in Tablet Display</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

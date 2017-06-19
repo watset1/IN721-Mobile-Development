@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bit.watset1.iwant.AddEditActivity"
+    android:background="@color/splashBackground">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:ems="5"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etProductName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Enter Product Name"
+        android:textColor="@color/addnew_text"
+        android:textColorHint="@color/list_label_background"
+        android:textAlignment="textStart"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/addnew_edittext_textsize"
+        android:background="@color/edittext_background"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:selectAllOnFocus="true"
+        android:maxLength="30"
+        android:layout_below="@+id/layout_image"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/addnew_image_height"
+        android:id="@+id/layout_image"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/addnew_image_height"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivProductImage"
+            android:background="@android:color/black"
+            android:scaleType="centerCrop"
+            android:rotation="90" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/layout_vendor"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etProductPrice"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/list_label_background"
+        android:textColor="@color/addnew_text"
+        android:hint="Enter price"
+        android:background="@color/edittext_background"
+        android:textSize="@dimen/addnew_edittext_textsize"
+        android:paddingLeft="10dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:selectAllOnFocus="false"
+        android:textIsSelectable="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_vendor"
+        android:layout_below="@+id/etProductName"
+        android:background="@color/edittext_background"
+        android:layout_margin="8dp"
+        android:paddingLeft="6dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etProductVendor"
+            android:layout_weight="0.55"
+            android:textColor="@color/addnew_text"
+            android:textColorHint="@color/list_label_background"
+            android:hint="Enter new vendor"
+            android:textSize="@dimen/addnew_edittext_textsize"
+            android:selectAllOnFocus="true"
+            android:maxLength="19"
+            android:inputType="textCapSentences"
+            android:background="@color/edittext_background"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" />
+
+        <bit.watset1.iwant.CustomSpinner
+            android:layout_width="0dp"
+            android:id="@+id/spProductVendor"
+            android:layout_weight="0.45"
+            android:elevation="0dp"
+            android:layout_height="50dp"
+            android:paddingLeft="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/layout_buttons"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/etProductPrice"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Notes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/etProductPrice"
+            android:layout_alignStart="@+id/etProductPrice"
+            android:id="@+id/btnNotes"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.5"
+            android:background="@color/edittext_background"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/addnew_edittext_textsize"
+            android:paddingLeft="10dp"
+            android:textColor="@color/list_label_background"
+            android:textAllCaps="false"
+            android:layout_marginRight="8dp"
+            android:typeface="normal" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnCancel"
+            android:layout_weight="0.25"
+            android:background="@color/addedit_negative"
+            android:backgroundTint="@color/addedit_negative"
+            android:layout_marginRight="8dp"
+            app:srcCompat="@drawable/back"
+            android:scaleType="fitCenter"
+            android:padding="4dp" />
+
+        <ImageButton
+            android:text="Delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnDelete"
+            android:layout_weight="0.25"
+            android:background="@color/addedit_negative"
+            android:textSize="@dimen/addnew_edittext_textsize"
+            android:layout_marginRight="8dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/cross"
+            android:scaleType="centerInside"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:text="Save Item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSave"
+            android:layout_weight="0.25"
+            android:background="@color/intro_button_tint"
+            android:textSize="@dimen/addnew_edittext_textsize"
+            app:srcCompat="@drawable/tick"
+            android:scaleType="centerInside"
+            android:padding="4dp" />
+    </LinearLayout>
+
+</RelativeLayout>

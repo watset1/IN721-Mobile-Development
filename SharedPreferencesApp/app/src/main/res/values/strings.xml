@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SharedPreferencesApp</string>
+    <string name="preference_name">LanguageChooser</string>
+    <string name="main_message_spanish">Hola Mundo</string>
+    <string name="main_message_english">Hello World</string>
+    <string name="main_message_default">No language chosen</string>
+    <string name="main_message_german">Hallo Welt</string>
+    <string name="main_message_french">Bonjour le monde</string>
+    <string name="main_button_text">Save Preferences</string>
+</resources>

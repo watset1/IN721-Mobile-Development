@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Data Passing</string>
+    <string name="main_label">Your Username:</string>
+    <string name="settings_label">Enter Your Username:</string>
+    <string name="main_button_text">Go to Settings</string>
+    <string name="settings_button_text">Return to Main</string>
+    <string name="default_username">No username chosen yet...</string>
+    <string name="incorrect_length">Usernames must be atleast 3 characters long</string>
+</resources>

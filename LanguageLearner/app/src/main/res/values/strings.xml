@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">German Language Trainer</string>
+    <string name="menu_title">German Language Trainer</string>
+    <string name="menu_button_text">BEGIN QUIZ</string>
+    <string name="question_label_text">Question : </string>
+    <string name="question_button_der">DER</string>
+    <string name="question_button_die">DIE</string>
+    <string name="question_button_das">DAS</string>
+    <string name="question_correct">CORRECT</string>
+    <string name="question_incorrect">INCORRECT</string>
+    <string name="result_finish">FINISH</string>
+    <string name="question_instructions">Choose the article that matches the image :</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Location Practical 2</string>
+    <string name="main_title_text">Location Monitoring</string>
+    <string name="main_latitude">Latitude</string>
+    <string name="main_longitude">Longitude</string>
+    <string name="main_city">Closest City: </string>
+    <string name="main_empty_query">[[]]</string>
+    <string name="main_display_format">.###</string>
+    <string name="main_parse_format">.########</string>
+    <string name="main_loading_message">Loading</string>
+    <string name="main_city_seperator">, </string>
+    <string name="main_no_city">There are no cities near you</string>
+</resources>

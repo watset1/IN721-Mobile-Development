@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">i Want</string>
+    <string name="intro_default">There are no recent items</string>
+    <string name="process_type">processType</string>
+    <string name="vendors">vendors</string>
+    <string name="process_type_add">Add</string>
+    <string name="process_type_edit">Edit</string>
+    <string name="passed_data_item">item</string>
+    <string name="currency_format">%.2f</string>
+    <string name="input_list_stub">STUB</string>
+    <string name="input_error_feedback">You need to fill the following field(s): \n</string>
+    <string name="input_error_regex">(?=\\p{Lu})</string>
+    <string name="addedit_feedback">feedback</string>
+    <string name="addedit_feedback_deleted">Item deleted</string>
+    <string name="addedit_feedback_added">Item added</string>
+    <string name="addedit_feedback_add_error">Item not saved</string>
+    <string name="addedit_feedback_photo_error">Photo not saved</string>
+    <string name="addedit_notes_reference">notes</string>
+    <string name="addedit_notes_string">string</string>
+    <string name="addedit_confirm_delete">delete</string>
+    <string name="fetch_loading_message">Searching...</string>
+    <string name="transition_loading">Loading items...</string>
+    <string name="transition_processing_deletion">Deleting item...</string>
+    <string name="transition_processing_addition">Saving item...</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QRApp</string>
+    <string name="main_qrcode_default">N/A</string>
+</resources>

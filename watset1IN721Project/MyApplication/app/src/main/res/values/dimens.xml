@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="intro_button_height">60dp</dimen>
+    <dimen name="intro_button_textsize">30sp</dimen>
+    <dimen name="intro_default_textsize">30sp</dimen>
+    <dimen name="addnew_image_height">320dp</dimen>
+    <dimen name="addnew_edittext_textsize">20sp</dimen>
+    <dimen name="intro_item_textsize">18sp</dimen>
+</resources>

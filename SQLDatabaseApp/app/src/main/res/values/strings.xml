@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SQLDatabaseApp</string>
+    <string name="main_title_firstname">First Name</string>
+    <string name="main_title_lastname">Last Name</string>
+    <string name="main_title_position">Main Position</string>
+    <string name="main_searchfield_lastname">lastName</string>
+</resources>

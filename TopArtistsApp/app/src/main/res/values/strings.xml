@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TopArtistsApp</string>
+    <string name="top_artists">chart.getTopArtists</string>
+    <string name="similar_artists">artist.getSimilar</string>
+    <string name="format_json">json</string>
+    <string name="api_file">_api_key.txt</string>
+</resources>

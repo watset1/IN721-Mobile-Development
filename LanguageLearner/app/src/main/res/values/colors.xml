@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menuTitle">#ffffff</color>
+    <color name="questionScreenBack">#ffffff</color>
+    <color name="correctColor">#6af485</color>
+    <color name="incorrectColor">#ff4f43</color>
+    <color name="questionButtonColor">#dedddd</color>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MultipleActivities</string>
+    <string name="main_activity_title">This is activity A</string>
+    <string name="second_activity_title">This is activity B</string>
+    <string name="third_activity_button_name">Go to Google</string>
+    <string name="google">http://www.google.com</string>
+</resources>

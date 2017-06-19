@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bit.watset1.complexscreencontrols.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:fontFamily="sans-serif"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="textStart"
+        android:id="@+id/txtTitle" />
+
+    <Button
+        android:text="ENROLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/subtitle_textsize"
+        android:id="@+id/btnEnroll" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthSpinner"
+        android:layout_above="@+id/btnEnroll"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="116dp" />
+
+    <TextView
+        android:text="@string/radioButton_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/subtitle_textsize"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instrumentGroup"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:checkedButton="@+id/rdoAccordian">
+
+        <RadioButton
+            android:text="Accordian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoAccordian"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Bassoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoBassoon"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Cello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoCello"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/spinner_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtMonthTitle"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEnroll"
+        android:layout_marginBottom="38dp"
+        android:id="@+id/txtFeedback"
+        android:textSize="@dimen/subtitle_textsize"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

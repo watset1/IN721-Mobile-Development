@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bit.watset1.cameraapp.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutScreenLayout"
+        android:padding="8dp"
+        android:background="@android:color/black">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/layoutButton"
+            android:layout_marginRight="8dp">
+
+            <ImageButton
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/camera_icon"
+                android:id="@+id/ibCamera"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:background="@android:drawable/btn_dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/ibCamera"
+            android:id="@+id/layoutMosaic"
+            android:layout_weight="0.8"
+            android:padding="8dp"
+            android:background="@color/divBackground">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/layoutLeftImages"
+                android:layout_weight="0.5"
+                android:layout_marginRight="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/ivTopLeft"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/ivBottomLeft"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/layoutRightImages"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/ivTopRight"
+                    android:layout_weight="0.5"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/ivBottomRight"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

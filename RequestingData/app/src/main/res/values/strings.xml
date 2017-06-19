@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Requesting Data</string>
+    <string name="main_title">Main Screen</string>
+    <string name="settings_title">Settings Screen</string>
+    <string name="colour_text">The colour of this text must change</string>
+    <string name="change_text">This colour will be passed to main</string>
+    <string name="colour_button_text">CHANGE TEXT COLOUR</string>
+</resources>
